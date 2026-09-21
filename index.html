@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Cardoso de Carvalho | Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#475569',
+                            DEFAULT: '#1e293b',
+                            dark: '#0f172a',
+                        },
+                        accent: {
+                            DEFAULT: '#3b82f6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .fade-in { animation: fadeIn 1s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        /* Estilos para os modais */
+        .modal { display: none; }
+        .modal.active { display: flex; animation: fadeInModal 0.3s ease-out forwards; }
+        @keyframes fadeInModal { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 antialiased selection:bg-accent selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-bold text-xl text-brand tracking-tight">Gabriel C.</a>
+                </div>
+                <div class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="#sobre" class="text-gray-600 hover:text-accent transition-colors font-medium">Sobre Mim</a>
+                    <a href="#experiencia" class="text-gray-600 hover:text-accent transition-colors font-medium">Experiência</a>
+                    <a href="#habilidades" class="text-gray-600 hover:text-accent transition-colors font-medium">Habilidades</a>
+                    <a href="#projetos" class="text-gray-600 hover:text-accent transition-colors font-medium">Projetos</a>
+                    <a href="#formacao" class="text-gray-600 hover:text-accent transition-colors font-medium">Formação & Certificações</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 hover:text-brand focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-brand-dark overflow-hidden flex items-center min-h-[80vh]">
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in">
+            <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white tracking-tight mb-4">
+                Gabriel Cardoso de Carvalho
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-300 font-light max-w-3xl mx-auto mb-8">
+                Psicologia <span class="text-accent font-bold">|</span> Recursos Humanos & People Analytics <span class="text-accent font-bold">|</span> Análise de Dados
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#experiencia" class="bg-accent hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Minha Trajetória
+                </a>
+                <a href="#contato" class="bg-transparent border border-gray-400 hover:border-white text-white font-medium py-3 px-8 rounded-full transition-all">
+                    Contato
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-brand mb-4">Sobre Mim</h2>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full"></div>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100 text-lg text-gray-700 leading-relaxed text-center md:text-left">
+                <p class="mb-4">
+                    Sou <strong>Estudante de Psicologia</strong> com forte interesse em atuar na área de <strong>Recursos Humanos</strong>. Meu objetivo é contribuir com conhecimentos em Psicologia, People Analytics, recrutamento e seleção, gestão de pessoas, análise de dados e desenvolvimento de controles e indicadores.
+                </p>
+                <p class="mb-4">
+                    Possuo experiência em rotinas administrativas, organização e conferência de dados, acompanhamento de processos e desenvolvimento de controles utilizando Excel, Power Query e Power BI. 
+                </p>
+                <p>
+                    Busco oportunidades para desenvolver minha carreira em Recursos Humanos, trazendo uma visão que integra <strong>processos estruturados, indicadores estratégicos e a gestão humanizada das pessoas</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brand mb-4">Experiência Profissional</h2>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full mb-8"></div>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-brand">Jovem Aprendiz — PCP</h3>
+                            <p class="text-accent font-medium">Altacoppo</p>
+                        </div>
+                        <div class="mt-2 md:mt-0 text-sm text-gray-500 font-medium bg-gray-100 px-3 py-1 rounded-full inline-block">
+                            Agosto de 2025 – Atual
+                        </div>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mt-4">
+                        <li>Emissão e organização de documentações de produção para máquinas termoformadoras e setor de impressão.</li>
+                        <li>Desenvolvimento e atualização de controles em Excel para acompanhamento de solicitações, divergências e indicadores operacionais.</li>
+                        <li>Conferência, organização e consolidação de dados para apoio às rotinas e ao acompanhamento de processos.</li>
+                        <li>Apoio na melhoria da comunicação intersetorial por meio de registros padronizados e controles visuais.</li>
+                        <li>Apoio às rotinas administrativas do setor, incluindo conferência de informações e emissão de etiquetas.</li>
+                    </ul>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-brand">Jovem Aprendiz — Área Administrativa</h3>
+                            <p class="text-accent font-medium">Cobasi</p>
+                        </div>
+                        <div class="mt-2 md:mt-0 text-sm text-gray-500 font-medium bg-gray-100 px-3 py-1 rounded-full inline-block">
+                            Maio de 2025 – Agosto de 2025
+                        </div>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mt-4">
+                        <li>Suporte às rotinas administrativas de verificação de cargas e controle de processos.</li>
+                        <li>Acompanhamento e organização de relatórios internos para conferência de informações operacionais.</li>
+                        <li>Atuação na identificação e encaminhamento de divergências, contribuindo para a organização do fluxo de informações e da equipe.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brand mb-4">Competências</h2>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full mb-8"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                    <h4 class="font-bold text-brand mb-2 flex items-center gap-2"><i class="fas fa-users text-purple-600"></i> Recursos Humanos</h4>
+                    <p class="text-gray-600 text-sm">Conhecimentos em Recrutamento e Seleção, People Analytics, Gestão de Pessoas e indicadores.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                    <h4 class="font-bold text-brand mb-2 flex items-center gap-2"><i class="fas fa-file-excel text-green-600"></i> Excel Intermediário</h4>
+                    <p class="text-gray-600 text-sm">Fórmulas, organização e análise de dados, criação de controles e dashboards.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                    <h4 class="font-bold text-brand mb-2 flex items-center gap-2"><i class="fas fa-filter text-yellow-500"></i> Power Query & Power BI</h4>
+                    <p class="text-gray-600 text-sm">Importação, tratamento e consolidação de dados. Criação de relatórios e acompanhamento de indicadores.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                    <h4 class="font-bold text-brand mb-2 flex items-center gap-2"><i class="fas fa-robot text-blue-500"></i> IA Aplicada à Produtividade</h4>
+                    <p class="text-gray-600 text-sm">Uso de IA (ChatGPT, Gemini, Copilot) para automações (VBA), estruturação de dados e suporte em rotinas de RH.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 md:col-span-2">
+                    <h4 class="font-bold text-brand mb-2 flex items-center gap-2"><i class="fas fa-tasks text-slate-600"></i> Administrativo e Processos</h4>
+                    <p class="text-gray-600 text-sm">Conferência de dados, organização de informações, padronização de processos e suporte administrativo focado em eficiência.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 flex flex-wrap justify-center gap-3">
+                <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 shadow-sm">Recrutamento e Seleção</span>
+                <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 shadow-sm">People Analytics</span>
+                <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 shadow-sm">Dashboard & Indicadores</span>
+                <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 shadow-sm">Gestão de Pessoas</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-20 bg-gray-50 relative z-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brand mb-4">Galeria de Projetos</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Clique em cada projeto para explorar os detalhes, visualizações e a metodologia aplicada.</p>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <!-- Projetos Profissionais -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-briefcase text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand">Projetos Profissionais</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Card 1: Dashboard Altacoppo -->
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition-all flex flex-col group cursor-pointer" onclick="openModal('modal-dashboard')">
+                        <div class="h-48 bg-slate-800 flex items-center justify-center relative overflow-hidden group-hover:bg-slate-700 transition-colors">
+                            <i class="fas fa-chart-pie text-6xl text-white opacity-20 absolute -right-4 -bottom-4 transition-transform group-hover:scale-110"></i>
+                            <h3 class="text-xl font-bold text-white px-6 text-center z-10">Dashboard de Produção</h3>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col items-center text-center">
+                            <p class="text-gray-600 text-sm mb-4">Análise interativa de gargalos e planejamento estratégico.</p>
+                            <button class="mt-auto bg-brand text-white py-2 px-6 rounded-full hover:bg-accent transition-colors text-sm font-medium shadow-md">
+                                <i class="fas fa-search-plus mr-2"></i> Explorar Painel
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Automação VBA -->
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition-all flex flex-col group cursor-pointer" onclick="openModal('modal-vba')">
+                        <div class="h-48 bg-green-700 flex items-center justify-center relative overflow-hidden group-hover:bg-green-600 transition-colors">
+                            <i class="fas fa-cogs text-6xl text-white opacity-20 absolute -right-4 -bottom-4 transition-transform group-hover:scale-110"></i>
+                            <h3 class="text-xl font-bold text-white px-6 text-center z-10">Automação de Dados</h3>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col items-center text-center">
+                            <p class="text-gray-600 text-sm mb-4">Gestão de registros de produção com formulários dinâmicos.</p>
+                            <button class="mt-auto bg-brand text-white py-2 px-6 rounded-full hover:bg-accent transition-colors text-sm font-medium shadow-md">
+                                <i class="fas fa-play mr-2"></i> Ver Demonstração
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projetos Acadêmicos -->
+            <div>
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-10 h-10 bg-purple-700 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-brand">Projetos Acadêmicos</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Card 3: Pesquisa Psicologia -->
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition-all flex flex-col group cursor-pointer" onclick="openModal('modal-pesquisa')">
+                        <div class="h-48 bg-purple-700 flex items-center justify-center relative overflow-hidden group-hover:bg-purple-600 transition-colors">
+                            <i class="fas fa-search text-6xl text-white opacity-20 absolute -right-4 -bottom-4 transition-transform group-hover:scale-110"></i>
+                            <h3 class="text-xl font-bold text-white px-6 text-center z-10">Pesquisa em Psicologia</h3>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col items-center text-center">
+                            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-bold uppercase tracking-wide mb-3">Estágio Supervisionado I</span>
+                            <p class="text-gray-600 text-sm mb-4">Análise de dados sobre a percepção social e barreiras de acesso à terapia.</p>
+                            <button class="mt-auto bg-brand text-white py-2 px-6 rounded-full hover:bg-accent transition-colors text-sm font-medium shadow-md">
+                                <i class="fas fa-chart-bar mr-2"></i> Ver Resultados
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Saúde Mental e Prevenção -->
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition-all flex flex-col group cursor-pointer" onclick="openModal('modal-saude')">
+                        <div class="h-48 bg-pink-700 flex items-center justify-center relative overflow-hidden group-hover:bg-pink-600 transition-colors">
+                            <i class="fas fa-heartbeat text-6xl text-white opacity-20 absolute -right-4 -bottom-4 transition-transform group-hover:scale-110"></i>
+                            <h3 class="text-xl font-bold text-white px-6 text-center z-10">Saúde Mental e Prevenção</h3>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col items-center text-center">
+                            <span class="px-3 py-1 bg-pink-50 text-pink-700 rounded-full text-xs font-bold uppercase tracking-wide mb-3">Teorias e Técnicas Psicoterápicas</span>
+                            <p class="text-gray-600 text-sm mb-4">Ações psicoeducativas de valorização da vida e saúde da mulher.</p>
+                            <button class="mt-auto bg-brand text-white py-2 px-6 rounded-full hover:bg-accent transition-colors text-sm font-medium shadow-md">
+                                <i class="fas fa-book-open mr-2"></i> Ver Projeto
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Intervenção TEA -->
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition-all flex flex-col group cursor-pointer" onclick="openModal('modal-tea')">
+                        <div class="h-48 bg-blue-700 flex items-center justify-center relative overflow-hidden group-hover:bg-blue-600 transition-colors">
+                            <i class="fas fa-puzzle-piece text-6xl text-white opacity-20 absolute -right-4 -bottom-4 transition-transform group-hover:scale-110"></i>
+                            <h3 class="text-xl font-bold text-white px-6 text-center z-10">Intervenção Comportamental</h3>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col items-center text-center">
+                            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wide mb-3">Psicologia Experimental</span>
+                            <p class="text-gray-600 text-sm mb-4">Aplicação do método TEACCH e Behaviorismo com crianças autistas.</p>
+                            <button class="mt-auto bg-brand text-white py-2 px-6 rounded-full hover:bg-accent transition-colors text-sm font-medium shadow-md">
+                                <i class="fas fa-book-open mr-2"></i> Ver Projeto
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Direitos Humanos -->
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-xl transition-all flex flex-col group cursor-pointer" onclick="openModal('modal-dh')">
+                        <div class="h-48 bg-orange-600 flex items-center justify-center relative overflow-hidden group-hover:bg-orange-500 transition-colors">
+                            <i class="fas fa-hands-helping text-6xl text-white opacity-20 absolute -right-4 -bottom-4 transition-transform group-hover:scale-110"></i>
+                            <h3 class="text-xl font-bold text-white px-6 text-center z-10">Inclusão e Direitos Humanos</h3>
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col items-center text-center">
+                            <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs font-bold uppercase tracking-wide mb-3">Psicologia, Ética e Direitos Humanos</span>
+                            <p class="text-gray-600 text-sm mb-4">Ação social de acolhimento e arrecadação para famílias atípicas.</p>
+                            <button class="mt-auto bg-brand text-white py-2 px-6 rounded-full hover:bg-accent transition-colors text-sm font-medium shadow-md">
+                                <i class="fas fa-book-open mr-2"></i> Ver Projeto
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modais de Exibição -->
+    
+    <!-- Modal 1: Dashboard -->
+    <div id="modal-dashboard" class="modal fixed inset-0 z-[100] bg-brand-dark/80 backdrop-blur-sm items-center justify-center p-4 sm:p-6" onclick="closeModalOnOutsideClick(event, 'modal-dashboard')">
+        <div class="bg-white rounded-2xl w-full max-w-5xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden relative">
+            <button onclick="closeModal('modal-dashboard')" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="p-6 md:p-8 border-b border-gray-100 flex-shrink-0">
+                <h3 class="text-2xl font-bold text-brand mb-2">Dashboard de Produção Estratégica</h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase">Power BI</span>
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase">DAX</span>
+                </div>
+                <p class="text-gray-600 text-sm md:text-base">Tratamento, estruturação e modelagem de uma década de dados industriais. Este ambiente analítico permitiu à gestão da Altacoppo visualizar tendências de longo prazo, identificar gargalos históricos nos setores de impressão/termoformagem e otimizar o planejamento baseando-se no cruzamento complexo de divergências e demandas operacionais.</p>
+            </div>
+            <div class="flex-grow bg-gray-100 p-4 md:p-8 flex items-center justify-center min-h-[300px] overflow-y-auto">
+                <!-- Substitua a div abaixo pelo código Iframe gerado pelo Power BI -->
+                <div class="w-full h-full min-h-[400px] bg-slate-800 rounded-xl flex flex-col items-center justify-center text-white p-6 text-center border-4 border-slate-700 border-dashed">
+                    <i class="fas fa-chart-line text-5xl mb-4 text-slate-500"></i>
+                    <p class="font-medium text-lg">Espaço reservado para o Dashboard Interativo</p>
+                    <p class="text-sm text-slate-400 mt-2">Cole aqui o &lt;iframe&gt; do Power BI Publicado na Web.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: VBA -->
+    <div id="modal-vba" class="modal fixed inset-0 z-[100] bg-brand-dark/80 backdrop-blur-sm items-center justify-center p-4 sm:p-6" onclick="closeModalOnOutsideClick(event, 'modal-vba')">
+        <div class="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden relative">
+            <button onclick="closeModal('modal-vba')" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="p-6 md:p-8 border-b border-gray-100 flex-shrink-0">
+                <h3 class="text-2xl font-bold text-brand mb-2">Automação de Gestão de Produção</h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs font-bold uppercase">Excel / VBA</span>
+                    <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs font-bold uppercase">Lógica de Programação</span>
+                </div>
+                <p class="text-gray-600 text-sm md:text-base">Para reduzir erros no controle manual de produção, desenvolvi interfaces de usuário personalizadas (UserForms) em Excel. Com auxílio de Inteligência Artificial para estruturação do código VBA, criei um sistema leve e eficiente capaz de registrar novos lotes, aplicar filtros complexos de busca e gerenciar a exclusão segura de registros obsoletos, garantindo a integridade dos dados na base.</p>
+            </div>
+            <div class="flex-grow bg-gray-100 p-4 md:p-8 flex items-center justify-center min-h-[300px] overflow-y-auto">
+                <!-- Substitua a imagem/div abaixo por um vídeo ou GIF da ferramenta funcionando -->
+                <div class="w-full h-full min-h-[350px] bg-white rounded-xl shadow-inner flex flex-col items-center justify-center text-gray-400 p-6 text-center border-2 border-gray-200">
+                    <i class="fas fa-photo-video text-5xl mb-4 text-gray-300"></i>
+                    <p class="font-medium text-lg text-gray-500">Demonstração da Automação</p>
+                    <p class="text-sm mt-2 max-w-sm">Insira aqui um GIF animado ou vídeo curto demonstrando o funcionamento do UserForm (cadastro, filtro, etc).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal 3: Pesquisa em Psicologia -->
+    <div id="modal-pesquisa" class="modal fixed inset-0 z-[100] bg-brand-dark/90 backdrop-blur-md items-center justify-center p-2 sm:p-4" onclick="closeModalOnOutsideClick(event, 'modal-pesquisa')">
+        <div class="bg-white rounded-2xl w-full max-w-6xl max-h-[96vh] flex flex-col shadow-2xl overflow-hidden relative">
+            <button onclick="closeModal('modal-pesquisa')" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20 shadow-sm">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="p-6 md:p-8 border-b border-gray-100 flex-shrink-0 pr-16">
+                <h3 class="text-2xl font-bold text-brand mb-2">Percepção da População sobre a Psicologia na Atualidade</h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-bold uppercase">Pesquisa Quali-Quanti</span>
+                    <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-xs font-bold uppercase">Dashboard</span>
+                </div>
+                <p class="text-gray-600 text-sm md:text-base">Relatório de Estágio Supervisionado pela Universidade Estácio. O projeto integrou uma pesquisa de opinião (56 participantes) e uma entrevista clínica para mapear o reconhecimento social da Psicologia e as principais barreiras de acesso ao atendimento.</p>
+            </div>
+            
+            <!-- Corpo com rolagem livre -->
+            <div class="flex-grow bg-gray-50 p-4 md:p-8 flex flex-col gap-6 overflow-y-auto items-center">
+                
+                <!-- Imagem do Dashboard com largura total otimizada -->
+                <div class="w-full flex-shrink-0 bg-white rounded-xl shadow-lg border border-gray-200 p-2">
+                    <img src="Imagens/Estagio 1/DashBoard Pesquisa.png" alt="Painel Síntese da Pesquisa sobre Psicologia" class="w-full max-h-[60vh] object-contain rounded-lg mx-auto block">
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mt-2 flex-shrink-0">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-lg text-brand mb-3"><i class="fas fa-chart-pie text-accent mr-2"></i> Principais Descobertas</h4>
+                        <ul class="text-sm text-gray-600 space-y-2 list-disc list-inside">
+                            <li>Alta importância atribuída à Psicologia (Média 4,82/5).</li>
+                            <li>91,1% acreditam que ainda existe preconceito sobre terapia.</li>
+                            <li>57,1% apontam o custo elevado como a principal barreira de acesso.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-lg text-brand mb-3"><i class="fas fa-comments text-accent mr-2"></i> Insights da Entrevista</h4>
+                        <p class="text-sm text-gray-600">A entrevista com uma profissional de TCC confirmou os dados da pesquisa de campo. Foram destacados os desafios da adesão terapêutica, a influência de autodiagnósticos baseados em redes sociais e a necessidade de políticas públicas para democratizar o acesso à saúde mental.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Saúde Mental e Prevenção -->
+    <div id="modal-saude" class="modal fixed inset-0 z-[100] bg-brand-dark/90 backdrop-blur-md items-center justify-center p-2 sm:p-4" onclick="closeModalOnOutsideClick(event, 'modal-saude')">
+        <div class="bg-white rounded-2xl w-full max-w-5xl max-h-[96vh] flex flex-col shadow-2xl overflow-hidden relative">
+            <button onclick="closeModal('modal-saude')" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20 shadow-sm">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="p-6 md:p-8 border-b border-gray-100 flex-shrink-0 pr-16">
+                <h3 class="text-2xl font-bold text-brand mb-2">Saúde Mental e Prevenção: Setembro Amarelo & Outubro Rosa</h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-pink-50 text-pink-700 rounded-full text-xs font-bold uppercase">Psicologia Social</span>
+                    <span class="px-3 py-1 bg-pink-50 text-pink-700 rounded-full text-xs font-bold uppercase">Ação Comunitária</span>
+                </div>
+                <p class="text-gray-600 text-sm md:text-base">Projeto de extensão focado na promoção do bem-estar biopsicossocial. Desenvolvemos palestras, rodas de conversa e dinâmicas interativas focadas na prevenção ao suicídio (Setembro Amarelo) e prevenção do câncer de mama (Outubro Rosa).</p>
+            </div>
+            
+            <div class="flex-grow bg-gray-50 p-4 md:p-8 flex flex-col gap-6 overflow-y-auto">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-full md:w-1/3 h-32 bg-yellow-100 rounded-lg flex items-center justify-center text-yellow-500">
+                        <i class="fas fa-sun text-4xl"></i>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h4 class="font-bold text-lg text-brand mb-2">Setembro Amarelo: Valorização da Vida</h4>
+                        <p class="text-sm text-gray-600">Intervenções em escolas e empresas (como a Leal Parts e Tempo Assist) para debater saúde mental, identificar sinais de alerta para sofrimento emocional e reforçar a rede de apoio, reduzindo o estigma de pedir ajuda.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-full md:w-1/3 h-32 bg-pink-100 rounded-lg flex items-center justify-center text-pink-500">
+                        <i class="fas fa-ribbon text-4xl"></i>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h4 class="font-bold text-lg text-brand mb-2">Outubro Rosa: Autocuidado e Prevenção</h4>
+                        <p class="text-sm text-gray-600">Rodas de conversa e dinâmicas afetivas com mulheres (incluindo uma ONG para idosas). O foco foi além da saúde física, abordando o fortalecimento da autoestima, medo da doença e a importância do acolhimento terapêutico.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-2">
+                    <img src="Imagens/Teorias e Tecnicas Psicoterapicas/Captura de tela 2026-09-21 142916.png" class="w-full h-32 md:h-40 object-cover rounded-lg shadow-sm border border-gray-200 hover:scale-105 transition-transform">
+                    <img src="Imagens/Teorias e Tecnicas Psicoterapicas/Captura de tela 2026-09-21 142953.png" class="w-full h-32 md:h-40 object-cover rounded-lg shadow-sm border border-gray-200 hover:scale-105 transition-transform">
+                    <img src="Imagens/Teorias e Tecnicas Psicoterapicas/Captura de tela 2026-09-21 143017.png" class="w-full h-32 md:h-40 object-cover rounded-lg shadow-sm border border-gray-200 hover:scale-105 transition-transform">
+                    <img src="Imagens/Teorias e Tecnicas Psicoterapicas/Captura de tela 2026-09-21 143056.png" class="w-full h-32 md:h-40 object-cover rounded-lg shadow-sm border border-gray-200 hover:scale-105 transition-transform">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Intervenção Comportamental TEA -->
+    <div id="modal-tea" class="modal fixed inset-0 z-[100] bg-brand-dark/90 backdrop-blur-md items-center justify-center p-2 sm:p-4" onclick="closeModalOnOutsideClick(event, 'modal-tea')">
+        <div class="bg-white rounded-2xl w-full max-w-5xl max-h-[96vh] flex flex-col shadow-2xl overflow-hidden relative">
+            <button onclick="closeModal('modal-tea')" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20 shadow-sm">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="p-6 md:p-8 border-b border-gray-100 flex-shrink-0 pr-16">
+                <h3 class="text-2xl font-bold text-brand mb-2">Intervenção Comportamental na Área da Aprendizagem</h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase">Análise do Comportamento (ABA)</span>
+                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold uppercase">Método TEACCH</span>
+                </div>
+                <p class="text-gray-600 text-sm md:text-base">Projeto realizado no Instituto Acolher focado em crianças com Transtorno do Espectro Autista (TEA). As intervenções utilizaram princípios do Behaviorismo (como reforçamento positivo) e o método TEACCH para melhorar a cognição e a autorregulação.</p>
+            </div>
+            
+            <div class="flex-grow bg-gray-50 p-4 md:p-8 flex flex-col gap-6 overflow-y-auto">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-full md:w-1/3 h-32 bg-blue-100 rounded-lg flex items-center justify-center text-blue-500">
+                        <i class="fas fa-puzzle-piece text-4xl"></i>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h4 class="font-bold text-lg text-brand mb-2">Estratégias e Metodologias</h4>
+                        <p class="text-sm text-gray-600">A estruturação do ambiente e a previsibilidade das rotinas foram essenciais. O uso de interesses específicos (hiperfocos, como carros ou heróis) facilitou a aprendizagem, enquanto a economia de fichas estimulou a permanência nas atividades.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-full md:w-1/3 h-32 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-500">
+                        <i class="fas fa-child text-4xl"></i>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h4 class="font-bold text-lg text-brand mb-2">Impacto nas Crianças</h4>
+                        <p class="text-sm text-gray-600">Observou-se um aumento na autonomia e tolerância à frustração. As adaptações individuais mostraram-se cruciais, pois atividades não customizadas geravam esquiva. A mediação sensível e o vínculo terapêutico foram os maiores propulsores do engajamento.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+                    <img src="Imagens/Psicologia Experimental/Captura de tela 2026-09-21 142440.png" class="w-full h-40 md:h-48 object-cover rounded-lg shadow-sm border border-gray-200 hover:scale-105 transition-transform">
+                    <img src="Imagens/Psicologia Experimental/Captura de tela 2026-09-21 142518.png" class="w-full h-40 md:h-48 object-cover rounded-lg shadow-sm border border-gray-200 hover:scale-105 transition-transform">
+                    <img src="Imagens/Psicologia Experimental/Captura de tela 2026-09-21 142537.png" class="w-full h-40 md:h-48 object-cover rounded-lg shadow-sm border border-gray-200 hover:scale-105 transition-transform">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Direitos Humanos e Inclusão -->
+    <div id="modal-dh" class="modal fixed inset-0 z-[100] bg-brand-dark/90 backdrop-blur-md items-center justify-center p-2 sm:p-4" onclick="closeModalOnOutsideClick(event, 'modal-dh')">
+        <div class="bg-white rounded-2xl w-full max-w-5xl max-h-[96vh] flex flex-col shadow-2xl overflow-hidden relative">
+            <button onclick="closeModal('modal-dh')" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20 shadow-sm">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="p-6 md:p-8 border-b border-gray-100 flex-shrink-0 pr-16">
+                <h3 class="text-2xl font-bold text-brand mb-2">Intervenção Social: Acolhimento a Famílias Atípicas</h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs font-bold uppercase">Psicologia Comunitária</span>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs font-bold uppercase">Ação Social</span>
+                </div>
+                <p class="text-gray-600 text-sm md:text-base">Projeto realizado em parceria com o Instituto Amigos do Autista, focado na Psicologia Comunitária. Promovemos a conscientização do autismo, arrecadação de brinquedos e o amparo psicossocial às famílias que lidam com a neurodivergência.</p>
+            </div>
+            
+            <div class="flex-grow bg-gray-50 p-4 md:p-8 flex flex-col gap-6 overflow-y-auto">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-full md:w-1/3 h-32 bg-orange-100 rounded-lg flex items-center justify-center text-orange-500">
+                        <i class="fas fa-gift text-4xl"></i>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h4 class="font-bold text-lg text-brand mb-2">Campanha de Arrecadação</h4>
+                        <p class="text-sm text-gray-600">Mobilização para arrecadar brinquedos sensoriais e educativos, fundamentais para o desenvolvimento cognitivo de crianças com TEA. A ação evidenciou a importância do terceiro setor na garantia de direitos básicos e a necessidade de resiliência frente aos desafios da captação de recursos.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-full md:w-1/3 h-32 bg-green-100 rounded-lg flex items-center justify-center text-green-500">
+                        <i class="fas fa-home text-4xl"></i>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h4 class="font-bold text-lg text-brand mb-2">Acolhimento Comunitário</h4>
+                        <p class="text-sm text-gray-600">Participação em eventos inclusivos focados não apenas nas crianças, mas nas mães e famílias. O projeto reforçou que quebrar o ciclo de isolamento e garantir um ambiente sem julgamentos é tão importante quanto o suporte terapêutico.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                    <img src="Imagens/Psico. Etica e Direitos Humanos/Captura de tela 2026-09-21 142757.png" class="w-full h-48 md:h-64 object-cover rounded-lg shadow-sm border border-gray-200 hover:scale-105 transition-transform">
+                    <img src="Imagens/Psico. Etica e Direitos Humanos/Captura de tela 2026-09-21 142823.png" class="w-full h-48 md:h-64 object-cover rounded-lg shadow-sm border border-gray-200 hover:scale-105 transition-transform">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts para controle dos modais -->
+    <script>
+        function openModal(modalId) {
+            document.body.style.overflow = 'hidden'; // Impede rolagem do fundo
+            document.getElementById(modalId).classList.add('active');
+        }
+
+        function closeModal(modalId) {
+            document.body.style.overflow = 'auto'; // Restaura rolagem do fundo
+            document.getElementById(modalId).classList.remove('active');
+        }
+
+        function closeModalOnOutsideClick(event, modalId) {
+            // Se o clique foi no próprio background escuro (não nos filhos), fecha o modal
+            if (event.target === document.getElementById(modalId)) {
+                closeModal(modalId);
+            }
+        }
+    </script>
+
+    <section id="formacao" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-brand mb-4">Formação Acadêmica e Complementar</h2>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Formação Acadêmica -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center gap-2"><i class="fas fa-graduation-cap text-accent"></i> Graduação e Escolaridade</h3>
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                            <h4 class="font-bold text-brand text-lg">Graduação em Psicologia</h4>
+                            <p class="text-gray-600">Universidade Estácio de Sá</p>
+                            <p class="text-sm text-accent font-medium mt-2">Cursando | Previsão: 2029</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                            <h4 class="font-bold text-brand text-lg">Ensino Médio</h4>
+                            <p class="text-gray-600">E.E. Basílio Bosniac</p>
+                            <p class="text-sm text-gray-500 mt-2">Concluído em 2024</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formação Complementar -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center gap-2"><i class="fas fa-certificate text-yellow-500"></i> Cursos e Certificações</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-start gap-3">
+                            <i class="fab fa-google text-blue-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">Google Data Analytics</h4>
+                                <p class="text-xs text-gray-500">Coursera / Google (Em andamento)</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-start gap-3">
+                            <i class="fas fa-users text-brand mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">People Analytics</h4>
+                                <p class="text-xs text-gray-500">SEBRAE (2026)</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-start gap-3">
+                            <i class="fas fa-user-check text-brand mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">Recrutamento e Seleção</h4>
+                                <p class="text-xs text-gray-500">SEBRAE (2026)</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-start gap-3">
+                            <i class="fas fa-hands-helping text-brand mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">Gestão de Pessoas</h4>
+                                <p class="text-xs text-gray-500">SEBRAE (2026)</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-start gap-3">
+                            <i class="fas fa-chart-line text-yellow-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">Power BI Intermediário</h4>
+                                <p class="text-xs text-gray-500">Santander Academy (2026)</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-start gap-3">
+                            <i class="fas fa-lightbulb text-yellow-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">Liderança</h4>
+                                <p class="text-xs text-gray-500">Santander Academy (2025)</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-start gap-3">
+                            <i class="fas fa-brain text-pink-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">Neurociência do Desenvol.</h4>
+                                <p class="text-xs text-gray-500">PUCRS (2025)</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-start gap-3">
+                            <i class="fas fa-desktop text-gray-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-800 text-sm">Pacote Office Completo</h4>
+                                <p class="text-xs text-gray-500">Fundação Bradesco (Em andam.)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 bg-gray-50 p-4 rounded-xl border border-gray-100 flex items-center gap-3">
+                        <i class="fas fa-language text-accent"></i>
+                        <div>
+                            <h4 class="font-bold text-gray-800 text-sm">Idiomas</h4>
+                            <p class="text-xs text-gray-500">Inglês Básico — Kultivi (Em andamento)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-brand-dark pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Vamos conversar?</h2>
+            <p class="text-gray-400 mb-8 max-w-xl mx-auto">
+                Estou sempre aberto a discutir novas oportunidades na área de Recursos Humanos, People Analytics e projetos envolventes de análise de dados.
+            </p>
+            
+            <div class="flex justify-center gap-6 mb-8 flex-wrap">
+                <a href="https://linkedin.com/in/g-cardoso-c/" target="_blank" class="w-12 h-12 rounded-full bg-brand flex items-center justify-center text-white hover:bg-accent transition-colors shadow-lg" title="LinkedIn">
+                    <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="mailto:gabrielcradoso@gmail.com" class="w-12 h-12 rounded-full bg-brand flex items-center justify-center text-white hover:bg-accent transition-colors shadow-lg" title="Email">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="https://wa.me/5511986175746" target="_blank" class="w-12 h-12 rounded-full bg-brand flex items-center justify-center text-white hover:bg-accent transition-colors shadow-lg" title="WhatsApp">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+                <a href="https://github.com/GCardosoC" target="_blank" class="w-12 h-12 rounded-full bg-brand flex items-center justify-center text-white hover:bg-accent transition-colors shadow-lg" title="GitHub">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+
+            <div class="text-gray-400 text-sm mb-12">
+                <p><i class="fas fa-phone mr-2"></i> (11) 98617-5746</p>
+                <p><i class="fas fa-map-marker-alt mr-2"></i> Carapicuíba - SP</p>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; Gabriel Cardoso de Carvalho. Todos os direitos reservados.</p>
+                <p class="mt-2 md:mt-0">Feito com <i class="fas fa-heart text-red-500 mx-1"></i> integrando Psicologia e Dados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
