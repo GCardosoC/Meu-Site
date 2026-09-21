@@ -54,10 +54,21 @@
                     <a href="#formacao" class="text-gray-600 hover:text-accent transition-colors font-medium">Formação & Certificações</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button class="text-gray-600 hover:text-brand focus:outline-none">
+                    <button id="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false" class="text-gray-600 hover:text-brand focus:outline-none p-2">
                         <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile (oculto por padrão) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 absolute w-full shadow-lg transition-all duration-300 origin-top">
+            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col shadow-inner">
+                <a href="#sobre" class="mobile-link text-gray-700 hover:text-accent hover:bg-blue-50 block px-3 py-3 rounded-md text-base font-medium transition-colors">Sobre Mim</a>
+                <a href="#experiencia" class="mobile-link text-gray-700 hover:text-accent hover:bg-blue-50 block px-3 py-3 rounded-md text-base font-medium transition-colors">Experiência</a>
+                <a href="#habilidades" class="mobile-link text-gray-700 hover:text-accent hover:bg-blue-50 block px-3 py-3 rounded-md text-base font-medium transition-colors">Habilidades</a>
+                <a href="#projetos" class="mobile-link text-gray-700 hover:text-accent hover:bg-blue-50 block px-3 py-3 rounded-md text-base font-medium transition-colors">Projetos</a>
+                <a href="#formacao" class="mobile-link text-gray-700 hover:text-accent hover:bg-blue-50 block px-3 py-3 rounded-md text-base font-medium transition-colors">Formação & Certificações</a>
             </div>
         </div>
     </nav>
@@ -318,7 +329,7 @@
     <!-- Modal 1: Dashboard -->
     <div id="modal-dashboard" class="modal fixed inset-0 z-[100] bg-brand-dark/80 backdrop-blur-sm items-center justify-center p-4 sm:p-6" onclick="closeModalOnOutsideClick(event, 'modal-dashboard')">
         <div class="bg-white rounded-2xl w-full max-w-5xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden relative">
-            <button onclick="closeModal('modal-dashboard')" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20">
+            <button onclick="closeModal('modal-dashboard')" aria-label="Fechar modal" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20">
                 <i class="fas fa-times text-xl"></i>
             </button>
             <div class="p-6 md:p-8 border-b border-gray-100 flex-shrink-0">
@@ -343,7 +354,7 @@
     <!-- Modal 2: VBA -->
     <div id="modal-vba" class="modal fixed inset-0 z-[100] bg-brand-dark/80 backdrop-blur-sm items-center justify-center p-4 sm:p-6" onclick="closeModalOnOutsideClick(event, 'modal-vba')">
         <div class="bg-white rounded-2xl w-full max-w-4xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden relative">
-            <button onclick="closeModal('modal-vba')" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20">
+            <button onclick="closeModal('modal-vba')" aria-label="Fechar modal" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20">
                 <i class="fas fa-times text-xl"></i>
             </button>
             <div class="p-6 md:p-8 border-b border-gray-100 flex-shrink-0">
@@ -368,7 +379,7 @@
 <!-- Modal 3: Pesquisa em Psicologia -->
     <div id="modal-pesquisa" class="modal fixed inset-0 z-[100] bg-brand-dark/90 backdrop-blur-md items-center justify-center p-2 sm:p-4" onclick="closeModalOnOutsideClick(event, 'modal-pesquisa')">
         <div class="bg-white rounded-2xl w-full max-w-6xl max-h-[96vh] flex flex-col shadow-2xl overflow-hidden relative">
-            <button onclick="closeModal('modal-pesquisa')" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20 shadow-sm">
+            <button onclick="closeModal('modal-pesquisa')" aria-label="Fechar modal" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20 shadow-sm">
                 <i class="fas fa-times text-xl"></i>
             </button>
             <div class="p-6 md:p-8 border-b border-gray-100 flex-shrink-0 pr-16">
@@ -409,7 +420,7 @@
     <!-- Modal 4: Saúde Mental e Prevenção -->
     <div id="modal-saude" class="modal fixed inset-0 z-[100] bg-brand-dark/90 backdrop-blur-md items-center justify-center p-2 sm:p-4" onclick="closeModalOnOutsideClick(event, 'modal-saude')">
         <div class="bg-white rounded-2xl w-full max-w-5xl max-h-[96vh] flex flex-col shadow-2xl overflow-hidden relative">
-            <button onclick="closeModal('modal-saude')" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20 shadow-sm">
+            <button onclick="closeModal('modal-saude')" aria-label="Fechar modal" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20 shadow-sm">
                 <i class="fas fa-times text-xl"></i>
             </button>
             <div class="p-6 md:p-8 border-b border-gray-100 flex-shrink-0 pr-16">
@@ -455,7 +466,7 @@
     <!-- Modal 5: Intervenção Comportamental TEA -->
     <div id="modal-tea" class="modal fixed inset-0 z-[100] bg-brand-dark/90 backdrop-blur-md items-center justify-center p-2 sm:p-4" onclick="closeModalOnOutsideClick(event, 'modal-tea')">
         <div class="bg-white rounded-2xl w-full max-w-5xl max-h-[96vh] flex flex-col shadow-2xl overflow-hidden relative">
-            <button onclick="closeModal('modal-tea')" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20 shadow-sm">
+            <button onclick="closeModal('modal-tea')" aria-label="Fechar modal" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20 shadow-sm">
                 <i class="fas fa-times text-xl"></i>
             </button>
             <div class="p-6 md:p-8 border-b border-gray-100 flex-shrink-0 pr-16">
@@ -500,7 +511,7 @@
     <!-- Modal 6: Direitos Humanos e Inclusão -->
     <div id="modal-dh" class="modal fixed inset-0 z-[100] bg-brand-dark/90 backdrop-blur-md items-center justify-center p-2 sm:p-4" onclick="closeModalOnOutsideClick(event, 'modal-dh')">
         <div class="bg-white rounded-2xl w-full max-w-5xl max-h-[96vh] flex flex-col shadow-2xl overflow-hidden relative">
-            <button onclick="closeModal('modal-dh')" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20 shadow-sm">
+            <button onclick="closeModal('modal-dh')" aria-label="Fechar modal" class="absolute top-4 right-4 text-gray-500 hover:text-red-500 bg-gray-100 hover:bg-red-50 rounded-full w-10 h-10 flex items-center justify-center transition-colors z-20 shadow-sm">
                 <i class="fas fa-times text-xl"></i>
             </button>
             <div class="p-6 md:p-8 border-b border-gray-100 flex-shrink-0 pr-16">
@@ -541,8 +552,9 @@
         </div>
     </div>
 
-    <!-- Scripts para controle dos modais -->
+    <!-- Scripts para interatividade -->
     <script>
+        // --- Controle dos Modais ---
         function openModal(modalId) {
             document.body.style.overflow = 'hidden'; // Impede rolagem do fundo
             document.getElementById(modalId).classList.add('active');
@@ -559,6 +571,35 @@
                 closeModal(modalId);
             }
         }
+
+        // --- Controle do Menu Mobile ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const icon = btn.querySelector('i');
+            const links = document.querySelectorAll('.mobile-link');
+
+            function toggleMenu() {
+                const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', !isExpanded);
+                menu.classList.toggle('hidden');
+                
+                if (isExpanded) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                } else {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                }
+            }
+
+            btn.addEventListener('click', toggleMenu);
+
+            // Fechar menu ao clicar em um link
+            links.forEach(link => {
+                link.addEventListener('click', toggleMenu);
+            });
+        });
     </script>
 
     <section id="formacao" class="py-20 bg-white">
